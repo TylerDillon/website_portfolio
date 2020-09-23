@@ -1,0 +1,26 @@
+{
+  "name": "website_portfolio",
+  "version": "1.0.0",
+  "description": "tyler-dillon.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TylerDillon/website_portfolio.git"
+  },
+  "author": "Tyler Dillon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TylerDillon/website_portfolio/issues"
+  },
+  "homepage": "https://github.com/TylerDillon/website_portfolio#readme",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.3",
+    "start": "^5.1.0"
+  }
+}

@@ -1,16 +1,20 @@
 import React from "react";
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 import { Link, withRouter } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../App.css';
 
 function Navigation(props) {
     return (
         <div className="navigation">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container">
-                    <Link class="navbar-brand" to="/">
-                        React Multi-Page Website
+            <Nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-color">
+                <div className="container">
+                    <Link className="navbar-brand" to="/">
+                        <img src="NameBanner.png" alt="Tyler Dillon"/>
                     </Link>
                     <button
-                        class="navbar-toggler"
+                        className="navbar-toggler"
                         type="button"
                         data-toggle="collapse"
                         data-target="#navbarResponsive"
@@ -18,23 +22,34 @@ function Navigation(props) {
                         aria-expanded="false"
                         aria-label="Toggle navigation"
                         >
-                            <span class="navbar-toggler-icon"></span>
+                            <span className="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarResponsive">
-                            <ul class="navbar-nav ml-auto">
-                                <li
-                                    class={`nav-item ${
+                        <div className="collapse navbar-collapse" id="navbarResponsive">
+                            <ul className="navbar-nav ml-auto">
+                            <li  // Projects button
+                                    className={`nav-item ${
                                         props.location.pathname === "/" ? "active" : ""
-                                    }`}
-                                >
-                                    <Link class="nav-link" to="/contact">
-                                        Contact
+                                    }`}>
+                                    <Link className="nav-link" to="/projects">
+                                        Projects
+                                    </Link>
+                                </li>                                
+                                <li  // Github button
+                                    className={`nav-item`}>
+                                    <Nav.Link href="https://github.com/TylerDillon" target='_blank'>GitHub</Nav.Link>
+                                </li>
+                                <li  // About button
+                                    className={`nav-item ${
+                                        props.location.pathname === "/" ? "active" : ""
+                                    }`}>
+                                    <Link className="nav-link" to="/about">
+                                        About
                                     </Link>
                                 </li>
                             </ul>
                         </div>
                 </div>
-            </nav>
+            </Nav>
         </div>
     );
 }

@@ -1,20 +1,28 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Navigation, Footer, Home, About, Contact } from "./components"
-import logo from './logo.svg';
+import { Navigation, Footer, Home, About, Projects, DiceRoller} from "./components";
 import './App.css';
+import Container from 'react-bootstrap/esm/Container';
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Navigation />
-        <Switch>
-          <Route path="/" exact component={() => <Home />} />
-          <Route path="/about" exact component={() => <About />} />
-          <Route path="/contact" exact component={() => <Contact />} />
-        </Switch>
+        <Container fluid>
+          <Switch>
+            <Route path="/" exact component={() => <Home />} />
+            <Route path="/projects" exact component={() => <Projects />} />
+            <Route path="/about" exact component={() => <About />} />
+            <Route path="/github" component={() => {
+              window.location.href = 'https://github.com/TylerDillon';
+              return null;
+            }}/>
+            
+          </Switch>
+        </Container>
         <Footer />
+        
       </Router>
     </div>
   );
