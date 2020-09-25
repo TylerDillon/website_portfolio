@@ -11,13 +11,13 @@ class About extends React.Component{
     render() {
         return (
             <div className="about">
-                <div class="container">
-                    <div class="row align-items-center my-5">
-                        <div class="col-lg-4">
+                <div className="container">
+                    <div className="row align-items-center my-5">
+                        <div className="col-lg-4">
                                 <Image xs={6} md={4} class="bubble" src="/profilepic1.jpg" fluid roundedCircle />
                         </div>
-                        <div class="col-lg-5">
-                            <h1 class="font-weight-light">About</h1>
+                        <div className="col-lg-5">
+                            <h1 className="font-weight-light">About</h1>
                             <p>Hello!</p>
                             <p>
                             I'm Tyler Dillon, a soon-to-be graduate of the University of Washington. With a B.S. in Computer Science from one of the best programs in the country, I hope to join the tech industry as a software engineer in a full-time or intern position. I enjoy working on front-end web development (as you see with this website before you, made in React.js), but I'm strong in databases and back-end languages as well. 
