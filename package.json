@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/TylerDillon/website_portfolio/issues"
   },
-  "homepage": "https://github.com/TylerDillon/website_portfolio#readme",
+  "homepage": "https://TylerDillon.github.io/website_portfolio",
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
