@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "description": "tyler-dillon.com",
   "private": true,
-  "main": "src/index.js",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
