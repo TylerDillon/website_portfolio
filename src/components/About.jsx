@@ -1,20 +1,17 @@
 import React from "react";
 import Image from "react-bootstrap/Image";
-import Col from "react-bootstrap/Col";
+import profilepic from '../assets/profilepic1.jpg';
 
 
 class About extends React.Component{
-    constructor(props) {
-        super(props);
-    }
-
+    
     render() {
         return (
             <div className="about">
                 <div className="container">
                     <div className="row align-items-center my-5">
                         <div className="col-lg-4">
-                                <Image xs={6} md={4} class="bubble" src="/profilepic1.jpg" fluid roundedCircle />
+                                <Image xs={6} md={4} className="bubble" src={profilepic} fluid roundedCircle />
                         </div>
                         <div className="col-lg-5">
                             <h1 className="font-weight-light">About</h1>

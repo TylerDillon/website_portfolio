@@ -1,6 +1,13 @@
 import React from "react";
 import { useState } from "react";
 import {Button, Container, Row, Col, ToggleButtonGroup, ToggleButton, InputGroup, FormControl, Modal, Image, OverlayTrigger, Tooltip} from "react-bootstrap";
+import d4 from '../assets/d4.png';
+import d6 from '../assets/d6.png';
+import d8 from '../assets/d8.png';
+import d10 from '../assets/d10.png';
+import d12 from '../assets/d12.png';
+import d20 from '../assets/d20.png';
+import info from '../assets/info.png';
 
 class DiceRoller extends React.Component {
     constructor(props) {
@@ -80,7 +87,7 @@ class DiceRoller extends React.Component {
                         Show Changelog
                     </Tooltip>
                 }>
-            <Image src="info.png" width="20px" height="20px" onClick={handleShow} className="hover-cursor mx-2 "  ></Image>
+            <Image src={info} width="20px" height="20px" onClick={handleShow} className="hover-cursor mx-2 "  ></Image>
             </OverlayTrigger>
             
 
@@ -125,26 +132,27 @@ class DiceRoller extends React.Component {
                         <Row className="mx-auto">
                             <ToggleButtonGroup type="radio" name="options" defaultValue="6" className="mx-3">
                                 <ToggleButton variant="outline-primary" value={4} onChange={(e) => this.setDie(e)}>
-                                    <Image src="d4.png" className="image-token mr-2" />
+                                    <Image src={d4} className="image-token mr-2" />
                                     d4
                                     </ToggleButton>
                                 <ToggleButton variant="outline-primary" value={6} onChange={(e) => this.setDie(e)}>
-                                    <Image src="d6.png" className="image-token mr-2" />
+                                    <Image src={d6} className="image-token mr-2" />
                                     d6
                                     </ToggleButton>
                                 <ToggleButton variant="outline-primary" value={8} onChange={(e) => this.setDie(e)}>
-                                    <Image src="d8.png" className="image-token mr-2" />
+                                    <Image src={d8} className="image-token mr-2" />
                                     d8
                                     </ToggleButton>
                                 <ToggleButton variant="outline-primary" value={10} onChange={(e) => this.setDie(e)}>
-                                    <Image src="d10.png" className="image-token mr-2" />
-                                    d10</ToggleButton>
+                                    <Image src={d10} className="image-token mr-2" />
+                                    d10
+                                    </ToggleButton>
                                 <ToggleButton variant="outline-primary" value={12} onChange={(e) => this.setDie(e)}>
-                                    <Image src="d12.png" className="image-token mr-2" />
+                                    <Image src={d12} className="image-token mr-2" />
                                     d12
                                     </ToggleButton>
                                 <ToggleButton variant="outline-primary" value={20} onChange={(e) => this.setDie(e)}>
-                                    <Image src="d20.png" className="image-token mr-2" />
+                                    <Image src={d20} className="image-token mr-2" />
                                     d20
                                     </ToggleButton>
 

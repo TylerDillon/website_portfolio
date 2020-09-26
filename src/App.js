@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Navigation, Footer, Home, About, Projects, DiceRoller} from "./components";
+import { Navigation, Footer, Home, About, Projects} from "./components";
 import './App.css';
 import Container from 'react-bootstrap/esm/Container';
 

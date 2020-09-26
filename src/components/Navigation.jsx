@@ -1,8 +1,8 @@
 import React from "react";
 import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 import { Link, withRouter } from "react-router-dom";
 import '../App.css';
+import nameBanner from '../assets/NameBanner.png';
 
 function Navigation(props) {
     return (
@@ -10,7 +10,7 @@ function Navigation(props) {
             <Nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-color">
                 <div className="container">
                     <Link className="navbar-brand" to="/">
-                        <img src="NameBanner.png" alt="Tyler Dillon"/>
+                        <img src={nameBanner} alt="Tyler Dillon"/>
                     </Link>
                     <button
                         className="navbar-toggler"

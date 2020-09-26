@@ -2,6 +2,9 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
 import Image from "react-bootstrap/Image";
+import intern from '../assets/intern.jpg';
+import atDesk from '../assets/at_desk.jpg';
+import fb from '../assets/FB_profilePic.jpg';
 
 function Home() {
     return (
@@ -30,14 +33,14 @@ function Home() {
         <Container className="mb-5">
             <Carousel className="bg-dark rounded">
                 <Carousel.Item>
-                    <Image src="intern.jpg" style={{height:"40vh"}} height="40vh" rounded/>
+                    <Image src={intern} style={{height:"40vh"}} height="40vh" rounded/>
                     <Carousel.Caption>
                     <h3>First slide label</h3>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <Image src="at_desk.jpg" style={{height:"40vh"}} rounded fluid/>
+                    <Image src={atDesk} style={{height:"40vh"}} rounded fluid/>
 
                     <Carousel.Caption>
                     <h3>Second slide label</h3>
@@ -45,7 +48,7 @@ function Home() {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                <Image src="FB_profilePic.jpg" style={{height:"40vh"}} rounded fluid/>
+                <Image src={fb} style={{height:"40vh"}} rounded fluid/>
                     
                     <Carousel.Caption>
                     <h3>Third slide label</h3>
